@@ -36,8 +36,8 @@ function addNews(){
     const tilte = article.headline.main;
     const snippet = article.snippet;
     const image = article.multimedia[index].url;
+    const artURL= article.web_url;
     const imageURL = `https://www.nytimes.com/${image}`;
-    console.log(image);
     let li = document.createElement('li');
     li.className = 'articleClass';
     li.setAttribute = ('id','element');
@@ -47,7 +47,11 @@ function addNews(){
     img1.setAttribute('src', imageURL);
     img1.setAttribute('id', 'imageFormat');
     li.appendChild(img1);
-
+    let p1 = document.createElement('a');
+    p1.setAttribute('id','more');
+    p1.innerText = 'Leer más...';
+    p1.setAttribute('href', artURL);
+    li.appendChild(p1);
   };
 
   dataCont.forEach(searchAndPaint);
