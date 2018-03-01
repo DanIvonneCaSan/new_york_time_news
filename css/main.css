@@ -1,6 +1,12 @@
 *{
   font-family: 'Lora', serif;
 }
+#imageFormat{
+  display: block;
+  padding: 2%;
+  width: 40%;
+  height: 30vh;
+}
 #search-form{
   background-color: #9DACB2;
   border: solid 2px #A0B9BF;

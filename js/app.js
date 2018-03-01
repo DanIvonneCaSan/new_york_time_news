@@ -33,12 +33,21 @@ function addNews(){
 
   const searchAndPaint = (item, index, array) =>{
     const article = data.response.docs[index];
-    const ttilte = article.headline.main;
+    const tilte = article.headline.main;
     const snippet = article.snippet;
+    const image = article.multimedia[index].url;
+    const imageURL = `https://www.nytimes.com/${image}`;
+    console.log(image);
     let li = document.createElement('li');
     li.className = 'articleClass';
+    li.setAttribute = ('id','element');
     li.innerText = snippet;
     responseContainer.appendChild(li);
+    let img1 = document.createElement('img');
+    img1.setAttribute('src', imageURL);
+    img1.setAttribute('id', 'imageFormat');
+    li.appendChild(img1);
+
   };
 
   dataCont.forEach(searchAndPaint);
