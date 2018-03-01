@@ -1,1 +1,35 @@
-ECHO est  activado.
+*{
+  font-family: 'Lora', serif;
+}
+#search-form{
+  background-color: #9DACB2;
+  border: solid 2px #A0B9BF;
+  padding: 2%;
+}
+
+#search-keyword{
+  display: block;
+  margin: 2%;
+}
+
+#submit-btn {
+  border-color: #A5CCD1;
+  background-color: #A5CCD1;
+  border-radius: 5px;
+  color: white;
+}
+
+.articleClass {
+  border: solid 2px #9DACB2;
+  list-style: none;
+  margin: 2%;
+  padding: 2%;
+}
+
+.labelFormat{
+  color: white;
+}
+
+h1 {
+  color: #949BA0;
+}
